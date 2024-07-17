@@ -24,7 +24,7 @@ const TabLayout = () => {
         <Tabs.Screen 
         name='explore'
         options={{
-          tabBarLabel:'Dora Explore',
+          tabBarLabel:'Explore',
           tabBarIcon: ({color}) => <MaterialIcons name="explore" size={24} color={color} />
         }}
         />
