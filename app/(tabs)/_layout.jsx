@@ -4,12 +4,16 @@ import { Tabs } from 'expo-router'
 import { Entypo } from '@expo/vector-icons';
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
+import {Colors} from '../../constants/Colors'
 
 //search icon for expo:  https://icons.expo.fyi/Index
 
 const TabLayout = () => {
   return (
-    <Tabs screenOptions={{headerShown:false}}>
+    <Tabs screenOptions={{
+      headerShown:false,
+      tabBarActiveTintColor: Colors.PRIMARY
+      }}>
         <Tabs.Screen 
         name='home'
         options={{
@@ -20,7 +24,7 @@ const TabLayout = () => {
         <Tabs.Screen 
         name='explore'
         options={{
-          tabBarLabel:'Explore',
+          tabBarLabel:'Dora Explore',
           tabBarIcon: ({color}) => <MaterialIcons name="explore" size={24} color={color} />
         }}
         />
